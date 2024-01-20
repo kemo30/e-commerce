@@ -12,7 +12,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call([
+            // PermissionSeeder::class,
+            // admin_seed::class,
+            // Add other seeders here
+        ]);
         // \App\Models\User::factory(10)->create();
+        \App\Models\Category::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
